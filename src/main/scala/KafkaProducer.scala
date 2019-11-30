@@ -2,7 +2,7 @@ import java.util.Properties
 
 import org.apache.kafka.clients.producer.{Callback, KafkaProducer, ProducerConfig, ProducerRecord, RecordMetadata}
 
-object Main extends App {
+object KafkaProducer extends App {
 
   val props = new Properties();
   props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
@@ -16,7 +16,7 @@ object Main extends App {
 
   val producer = new KafkaProducer[String, String](props)
 
-  var fut = producer.send(new ProducerRecord[String, String]("test6626", "key", "value"), new Callback {
+  producer.send(new ProducerRecord[String, String]("test6626", "ke22222y", "value"), new Callback {
     override def onCompletion(metadata: RecordMetadata, exception: Exception): Unit = {
       println(metadata)
       println(exception)
