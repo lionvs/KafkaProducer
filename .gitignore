@@ -1,0 +1,6 @@
+**/hidden
+.idea
+target
+project/target
+.bloop
+.metals
