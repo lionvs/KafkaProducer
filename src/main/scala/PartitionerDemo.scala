@@ -51,8 +51,8 @@ object Main2 extends App {
 
   val topic = "PartitionerDemo-input"
 
-    producer.send(new ProducerRecord[String, String](topic, "222222key", "value"), cb)
-    producer.send(new ProducerRecord[String, String](topic,   "mykey", "value"), cb)
+  producer.send(new ProducerRecord[String, String](topic, "222222key", "value"), cb)
+  producer.send(new ProducerRecord[String, String](topic, "mykey", "value"), cb)
 
   producer.send(new ProducerRecord[String, String](topic, "value32"), cb)
 
