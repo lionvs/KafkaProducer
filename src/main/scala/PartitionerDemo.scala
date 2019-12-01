@@ -27,7 +27,7 @@ class MyPartitioner extends Partitioner {
   override def configure(configs: util.Map[String, _]): Unit = {}
 }
 
-object Main2 extends App {
+object PartitionerDemo extends App {
 
   val props = new Properties();
   props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")

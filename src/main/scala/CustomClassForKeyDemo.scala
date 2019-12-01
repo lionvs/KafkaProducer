@@ -25,7 +25,7 @@ class InstEmpSerializer extends Serializer[InstEmp] {
   override def close(): Unit = {}
 }
 
-object Main3 extends App {
+object CustomClassForKeyDemo extends App {
 
   val props = new Properties();
   props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
